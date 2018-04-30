@@ -1,5 +1,23 @@
 <?php
-$_GET['name'] = 'Victor';
 
-echo ($_GET['name'] . "<br>");
-echo ($_SERVER['REQUEST_METHOD']);
+
+/*ДЕРЕВО К ДИРЕКТОРИИ*/
+echo __DIR__ ."<br>";
+
+/*ФАЙЛ ТЕКУЩИЙ*/
+echo __FILE__ ."<br>";
+
+/*ИСПОЛНЯЕМАЯ СТРОКА*/
+echo __LINE__ ."<br>";
+
+
+/*
+ НЕ ПОНИМАЮ ЗАДАНИЯ
+•	Student should create a few of custom constants with checking to already existed constants
+•	Student should print values of defined constants
+*/
+
+
+
+
+
