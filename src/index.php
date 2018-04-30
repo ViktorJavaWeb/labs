@@ -1,14 +1,5 @@
 <?php
+$_GET['name'] = 'Victor';
 
-$variableName = 5;
-$variableName = "f t 5";
-$variableName = <<<EOT
-    Hello heredoc $variableName
-EOT;
-
-$variableName = <<<'EOD'
-    Hello nowdoc
-EOD;
-
-
-echo ($variableName);
+echo ($_GET['name'] . "<br>");
+echo ($_SERVER['REQUEST_METHOD']);
