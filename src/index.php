@@ -1,23 +1,43 @@
 <?php
 
-
-/*ДЕРЕВО К ДИРЕКТОРИИ*/
-echo __DIR__ ."<br>";
-
-/*ФАЙЛ ТЕКУЩИЙ*/
-echo __FILE__ ."<br>";
-
-/*ИСПОЛНЯЕМАЯ СТРОКА*/
-echo __LINE__ ."<br>";
-
-
 /*
- НЕ ПОНИМАЮ ЗАДАНИЯ
-•	Student should create a few of custom constants with checking to already existed constants
-•	Student should print values of defined constants
+    Monday
+    Tuesday
+    Wednesday
+    Thursday
+    Friday
+    Sunday
+    Saturday
+
 */
 
+$firstTimeDay = 9; // начало рабочего дня
+$lastTimeDay = 18; // конец рабочего дня
+$time = '8'; // задаваемое время дня
+$dayWeek = 'Monday';
 
 
+//var_dump(empty($time));
 
 
+if (isset($dayWeek) && isset($time)){
+    if (!($dayWeek == 'Sunday' or $dayWeek == 'Saturday') and $time <= 24) {
+        if ($firstTimeDay < $time and $lastTimeDay > $time) {
+            $time = $lastTimeDay - $time;
+            echo "<h4>Количество часов до окончания рабочего дня - $time часа</h4>";
+        } elseif ($time < $firstTimeDay) {
+            $time = $firstTimeDay - $time;
+            echo "<h4>Количество часов до начала рабочего дня - $time часа</h4>";
+        }
+        if ($lastTimeDay < $time) {
+            $time = $time - $lastTimeDay;
+            echo "<h4>Количество часов после окончания рабочего дня - $time часа</h4>";
+        }
+    }elseif ($dayWeek == 'Sunday' or $dayWeek == 'Saturday'){
+        echo "ВЫХОДНЫЕ  !!!!!!!!!!!!!!!!!!!!";
+    }else{
+        echo "WARNING!!!!!!!";
+    }
+}else{
+    echo "WARNING !";
+}
