@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: AL
- * Date: 30.04.2018
- * Time: 20:46
- */
+function recursiveCounter($x){
+    $y = $x+1;
+    echo $y;
+    if($y == ($x+1)){
+        echo 'recursiveCounter - '. $y;
+    }
+}
+
+recursiveCounter(8);
