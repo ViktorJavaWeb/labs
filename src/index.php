@@ -1,7 +1,17 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: AL
- * Date: 30.04.2018
- * Time: 20:46
- */
+$stringContent = '----------------------------------------';
+$stringContentString = 'Hello student!!!!!!';
+
+function drawDelimiter(){
+    global $stringContent;
+    echo $stringContent.'<br>';
+}
+
+function drawContentString(){
+    global $stringContentString;
+    echo $stringContentString.'<br>';
+}
+
+drawDelimiter();
+drawContentString();
+drawDelimiter();
