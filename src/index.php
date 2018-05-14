@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: AL
- * Date: 30.04.2018
- * Time: 20:46
- */
+
+if(rand(0,1)){
+    echo 'stone jumping';
+}else{
+    echo 'stone drowned';
+}
