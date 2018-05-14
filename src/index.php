@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: AL
- * Date: 30.04.2018
- * Time: 20:46
- */
+$nub = array(1,2,3,4,5,6);
+
+$min = min($nub);
+$max = max($nub);
+
+echo 'min - ' . $min . '<br>'.
+    'max - ' , $max. '<br>';
+
+foreach ($nub as $key => $item){
+    if(($item % 2) == 0){
+       echo '$item - ' . $item . '<br>';
+    }
+}
