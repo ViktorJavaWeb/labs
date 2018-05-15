@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: AL
- * Date: 30.04.2018
- * Time: 20:46
- */
+for($i = 0; $i < 6; $i++){
+    $arrKey[] = rand(100, 110);
+}
+
+for($i = 0; $i < count($arrKey); $i++){
+    echo "arrKey[$i] - " . $arrKey[$i]. '<br>';
+    $arrKeyHashes[] = md5($arrKey[$i]);
+    echo $arrKeyHashes[$i]. '<br>';
+}
