@@ -64,6 +64,57 @@ class Computer
             echo 'Hello user computer ' . $this->action() . '<br>';
         }
     }
+
+
+    public function setCpu($cpu)
+    {
+        $this->cpu = $cpu;
+    }
+
+    public function getCpu()
+    {
+        return $this->cpu;
+    }
+
+    public function setRam($ram)
+    {
+        $this->ram = $ram;
+    }
+
+    public function getRam()
+    {
+        return $this->ram;
+    }
+
+    public function setVideo($video)
+    {
+        $this->video = $video;
+    }
+
+    public function getVideo()
+    {
+        return $this->video;
+    }
+
+    public function setMemory($memory)
+    {
+        return $this->memory = $memory;
+    }
+
+    public function getMemory()
+    {
+        return $this->memory;
+    }
+
+
+
+
+
+
+
+
+
+
 }
 
 /*
