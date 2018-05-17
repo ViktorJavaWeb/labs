@@ -1,5 +1,12 @@
 <?php
-class Computer
+/**
+ * Created by IntelliJ IDEA.
+ * User: AL
+ * Date: 17.05.2018
+ * Time: 21:15
+ */
+
+class Asus
 {
     protected $cpu;
     protected $ram;
@@ -10,7 +17,6 @@ class Computer
     protected $boole;
 
     private  $isWorking = null;
-
 
     function action()
     {
@@ -65,13 +71,3 @@ class Computer
         }
     }
 }
-
-/*
-•	Student should create into Computer class method identifyUser() allowed from any classes. This method should print message ‘Computer : Identify by login and password’;
-•	Student should move constant IS_DESKTOP from class Computer to children classes
-•	Student should setup Computer class properties using children classes constructors
-
-
-*/
-
-
