@@ -103,11 +103,9 @@ class Computer
 
     public function getMemory()
     {
+
         return $this->memory;
     }
-
-
-
 
 
 
