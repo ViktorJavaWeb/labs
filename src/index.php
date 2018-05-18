@@ -1,7 +1,10 @@
 <?php
-class Computer
-{
+require_once 'Computer.php';
 
-}
 
-$comp = new Computer();
+$labs = new Computer();
+
+$labs->start();
+$labs->restart();
+$labs->shutdown();
+$labs->restart();
