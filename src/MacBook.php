@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: AL
- * Date: 17.05.2018
- * Time: 21:16
- */
+
 
 class MacBook
 {
@@ -26,33 +21,30 @@ class MacBook
     public function start()
     {
         $this->boole = 'on';
-        echo 'Hello!! Welcome user.  <br> current statement - ' . $this->boole . '<br>';
-        if($this->boole == 'on'){
-            $this->printParameters();
-        }
+        echo PHP_EOL  . "Hello!! Welcome user." . PHP_EOL . "current statement - " . $this->boole . PHP_EOL;
     }
 
     public function shutdown()
     {
-
-        if($this->boole == 'off'){
-            echo 'ERROR';
-        }else{
-            $this->boole = 'off';
-            echo '<br> Good buy! user. <br> current statement - ' . $this->boole . '<br>';
-        }
-
+        $this->boole = 'off';
+        echo PHP_EOL  . " Good buy! user." . PHP_EOL . "current statement - ". $this->boole;
     }
 
     public function restart()
     {
-        $t = 0;
-        while ($t < 5){
-            $t++;
-            sleep(1);
-            echo ' . ';
+        if ($this->boole == 'on') {
+            $this->shutdown();
+            $this->start();
+            $t = 0;
+            while ($t < 5) {
+                $t++;
+                sleep(1);
+                echo ' . ';
+            }
         }
+
     }
+
 
 
     public function printParameters()
